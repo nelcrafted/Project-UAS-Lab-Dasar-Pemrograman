@@ -12,5 +12,3 @@ Program ini dibuat menggunakan bahasa Pascal untuk mendiagnosa beberapa penyakit
 
 Link Dokumentasi:
 https://drive.google.com/drive/folders/1EtEl8aVINB6XR7Zw4gCvZqKzyPlXDGHw?usp=drive_link
-
-Link Youtube:
