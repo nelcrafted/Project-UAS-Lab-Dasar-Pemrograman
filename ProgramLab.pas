@@ -26,77 +26,98 @@ var
 begin
     // Set semua gejala kosong dulu
     for i := 1 to 10 do
-        for j := 1 to 10 do
-            daftarPenyakit[i].gejala[j] := '';
+        with daftarPenyakit[i] do
+            for j := 1 to 10 do
+                gejala[j] := '';
 
     // Penyakit 1
-    daftarPenyakit[1].nama := 'Flu';
-    daftarPenyakit[1].gejala[1] := 'demam';
-    daftarPenyakit[1].gejala[2] := 'batuk';
-    daftarPenyakit[1].gejala[3] := 'pilek';
-    daftarPenyakit[1].gejala[4] := 'sakit kepala';
+    with daftarPenyakit[1] do begin
+        nama := 'Flu';
+        gejala[1] := 'demam';
+        gejala[2] := 'batuk';
+        gejala[3] := 'pilek';
+        gejala[4] := 'sakit kepala';
+    end;
 
     // Penyakit 2
-    daftarPenyakit[2].nama := 'Demam Berdarah';
-    daftarPenyakit[2].gejala[1] := 'demam tinggi';
-    daftarPenyakit[2].gejala[2] := 'nyeri sendi';
-    daftarPenyakit[2].gejala[3] := 'ruam kulit';
-    daftarPenyakit[2].gejala[4] := 'sakit kepala';
-    daftarPenyakit[2].gejala[5] := 'mual';
+    with daftarPenyakit[2] do begin
+        nama := 'Demam Berdarah';
+        gejala[1] := 'demam tinggi';
+        gejala[2] := 'nyeri sendi';
+        gejala[3] := 'ruam kulit';
+        gejala[4] := 'sakit kepala';
+        gejala[5] := 'mual';
+    end;
 
     // Penyakit 3
-    daftarPenyakit[3].nama := 'Maag';
-    daftarPenyakit[3].gejala[1] := 'nyeri perut';
-    daftarPenyakit[3].gejala[2] := 'mual';
-    daftarPenyakit[3].gejala[3] := 'perut kembung';
-    daftarPenyakit[3].gejala[4] := 'asam lambung naik';
+    with daftarPenyakit[3] do begin
+        nama := 'Maag';
+        gejala[1] := 'nyeri perut';
+        gejala[2] := 'mual';
+        gejala[3] := 'perut kembung';
+        gejala[4] := 'asam lambung naik';
+    end;
 
     // Penyakit 4
-    daftarPenyakit[4].nama := 'Tifus';
-    daftarPenyakit[4].gejala[1] := 'demam';
-    daftarPenyakit[4].gejala[2] := 'lemas';
-    daftarPenyakit[4].gejala[3] := 'mual';
-    daftarPenyakit[4].gejala[4] := 'sakit perut';
-    daftarPenyakit[4].gejala[5] := 'diare';
+    with daftarPenyakit[4] do begin
+        nama := 'Tifus';
+        gejala[1] := 'demam';
+        gejala[2] := 'lemas';
+        gejala[3] := 'mual';
+        gejala[4] := 'sakit perut';
+        gejala[5] := 'diare';
+    end;
 
     // Penyakit 5
-    daftarPenyakit[5].nama := 'Asma';
-    daftarPenyakit[5].gejala[1] := 'sesak napas';
-    daftarPenyakit[5].gejala[2] := 'batuk';
-    daftarPenyakit[5].gejala[3] := 'dada terasa berat';
+    with daftarPenyakit[5] do begin
+        nama := 'Asma';
+        gejala[1] := 'sesak napas';
+        gejala[2] := 'batuk';
+        gejala[3] := 'dada terasa berat';
+    end;
 
     // Penyakit 6
-    daftarPenyakit[6].nama := 'Hipertensi';
-    daftarPenyakit[6].gejala[1] := 'pusing';
-    daftarPenyakit[6].gejala[2] := 'penglihatan kabur';
-    daftarPenyakit[6].gejala[3] := 'mudah lelah';
+    with daftarPenyakit[6] do begin
+        nama := 'Hipertensi';
+        gejala[1] := 'pusing';
+        gejala[2] := 'penglihatan kabur';
+        gejala[3] := 'mudah lelah';
+    end;
 
     // Penyakit 7
-    daftarPenyakit[7].nama := 'Diabetes';
-    daftarPenyakit[7].gejala[1] := 'sering haus';
-    daftarPenyakit[7].gejala[2] := 'sering buang air kecil';
-    daftarPenyakit[7].gejala[3] := 'mudah lelah';
-    daftarPenyakit[7].gejala[4] := 'berat badan turun';
+    with daftarPenyakit[7] do begin
+        nama := 'Diabetes';
+        gejala[1] := 'sering haus';
+        gejala[2] := 'sering buang air kecil';
+        gejala[3] := 'mudah lelah';
+        gejala[4] := 'berat badan turun';
+    end;
 
     // Penyakit 8
-    daftarPenyakit[8].nama := 'Migrain';
-    daftarPenyakit[8].gejala[1] := 'sakit kepala';
-    daftarPenyakit[8].gejala[2] := 'mual';
-    daftarPenyakit[8].gejala[3] := 'sensitif cahaya';
+    with daftarPenyakit[8] do begin
+        nama := 'Migrain';
+        gejala[1] := 'sakit kepala';
+        gejala[2] := 'mual';
+        gejala[3] := 'sensitif cahaya';
+    end;
 
     // Penyakit 9
-    daftarPenyakit[9].nama := 'Covid-19';
-    daftarPenyakit[9].gejala[1] := 'demam';
-    daftarPenyakit[9].gejala[2] := 'batuk';
-    daftarPenyakit[9].gejala[3] := 'sesak napas';
-    daftarPenyakit[9].gejala[4] := 'hilang penciuman';
-    daftarPenyakit[9].gejala[5] := 'sakit kepala';
+    with daftarPenyakit[9] do begin
+        nama := 'Covid-19';
+        gejala[1] := 'demam';
+        gejala[2] := 'batuk';
+        gejala[3] := 'sesak napas';
+        gejala[4] := 'hilang penciuman';
+        gejala[5] := 'sakit kepala';
+    end;
 
     // Penyakit 10
-    daftarPenyakit[10].nama := 'Tuberkulosis';
-    daftarPenyakit[10].gejala[1] := 'batuk lama';
-    daftarPenyakit[10].gejala[2] := 'berkeringat malam';
-    daftarPenyakit[10].gejala[3] := 'berat badan turun';
+    with daftarPenyakit[10] do begin
+        nama := 'Tuberkulosis';
+        gejala[1] := 'batuk lama';
+        gejala[2] := 'berkeringat malam';
+        gejala[3] := 'berat badan turun';
+    end;
 end;
 
 procedure InputGejala;
@@ -131,16 +152,16 @@ begin
     for k := 1 to 10 do
         for l := 1 to jumlahGejala do
             for j := 1 to 10 do
-                if (daftarPenyakit[k].gejala[j] <> '') and
-                   (gejalaUser[l] = daftarPenyakit[k].gejala[j]) then
-                    inc(matchCount[k]);
+                with daftarPenyakit[k] do
+                    if (gejala[j] <> '') and (gejalaUser[l] = gejala[j]) then
+                        inc(matchCount[k]);
 
     // Susun hasil untuk semua penyakit yang punya kecocokan >= 1
     hasil := '';
     for k := 1 to 10 do
         if matchCount[k] > 0 then
-            hasil := hasil + daftarPenyakit[k].nama + ' (cocok ' +
-                     IntToStrSimple(matchCount[k]) + ' gejala)' + #13#10;
+            with daftarPenyakit[k] do
+                hasil := hasil + nama + ' (cocok ' + IntToStrSimple(matchCount[k]) + ' gejala)' + #13#10;
 
     if hasil = '' then
         CariPenyakit := 'Tidak dapat mendiagnosa penyakit berdasarkan gejala yang dimasukkan.'
